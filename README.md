@@ -8,7 +8,7 @@ GitHub Repository Link: [Placeholder](https://link-url-here.org)
 
 - [Descripton](#descripton)
 - [Sitemap](#sitemap)
-- [Target audience](#target-audience)
+- [Target Audience and Website Components](#target-audience-and-website-components)
 - [Tech Stack](#tech-stack)
 
 ## Descripton
@@ -77,9 +77,25 @@ I used Uizard to create wireframes for the websites. I found Uizard much more be
 
 When it came to the overall aesthetic of my portfolio, I conducted extensive research on various portfolio layouts and colour schemes. I discovered that the choice of colours is crucial for creating a cohesive theme that ties all the components together. This contributes to the overall layout and helps users to easily distinguish between different sections of the page. After testing different colour schemes, I opted for a blue colour palette as the theme for my website. The colours work well with each section, creating a simple yet effective theme, in my opinion.
 
-## Target audience
+## Target Audience and Website Components
 
-placeholder
+### Components list
+
+### Main Page
+
+- **Navigation Bar:** Responsive designed navigation bar with each heading linked to the relevant section of the page, providing better accessibility on every page. This applies to every page of the website.
+
+- **Main Section:** This is the main screen of the website. It features an image with a heading, a button to download my CV, and social media icons for GitHub and LinkedIn, which lead to those profiles. This setup allows potential employers to access my CV and also enables other developers to connect with me on LinkedIn or GitHub. I chose to place these elements on my main page to ensure they are the first features visitors see when they land on my website. This should make it easier to build connections and easier to network.
+
+- **About Section:** Features an image with a section of a paragraph about myself showing my interests, hobbies, and why I started coding. This section allows the readers to get to know me a little better and the reason why I started coding!
+
+- **Project Section:** This section of my website showcases all of my previous projects that I have worked on. It allows users to see the type of projects I've previously worked on. It features an image of the project, a brief description, and a link to the GitHub repository for that project.
+
+- **footer:** This section of the page contains my full name, copyright information, and social media icons linked to my profiles.
+
+### Blogs Page
+
+- **Main Page:**
 
 ## Tech Stack
 
