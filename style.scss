@@ -1,10 +1,15 @@
 @import url("https://fonts.cdnfonts.com/css/fantasista");
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
 
+// VARIABLES
+$heading-font: "Fantasista", sans-serif;
+$primary-font: "Lato", sans-serif;
 
-// CREATED A VARIABLE FOR CUSTOM FONT FAMILY
-$font-heading: "Fantasista", sans-serif;
-$primary-font: "Quicksand", sans-serif;
+// MIXINS
+@mixin theme-heading($theme-heading: #112d4e) {
+    background: $theme-heading;
+    font-family: $heading-font;
+}
 
 * {
     box-sizing: border-box;
@@ -12,64 +17,144 @@ $primary-font: "Quicksand", sans-serif;
     padding: 0;
 }
 
+// Targeting all elements in the body
 body > * {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    color: black;
+    color: #112d4e;
 }
 
-// HEADER COMPONENT 
+// Removing default styling for a tag
+a,
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+// MOBILE SCREEN HOME PAGE
+
+// HEADER COMPONENT
 header {
-    background: #112D4E;
+    @include theme-heading;
+
     height: 5vh;
-    padding: 2rem;
-    font-family: $font-heading;
+    padding: 2.5rem;
 
     a {
         display: inline-block;
+        transition: all 0.5s ease-in-out;
     }
 
     a:link,
     a:visited {
         font-size: 3rem;
         text-decoration: none;
-        color: #F9F7F7;
+        color: #f9f7f7;
     }
-    
+
     a:hover {
         color: #4a84cb;
         transition: 1s;
     }
-    
 }
 
 // NAV COMPONENT
 nav {
-    background-color: #5995da;
     height: 10vh;
     padding: 1.25rem;
-    font-family: $font-heading;
+    @include theme-heading;
 
     a {
         display: inline-block;
         padding: 1.5rem;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: 1s;
     }
 
     a:link,
     a:visited {
-        text-decoration: none;
-        color: #F9F7F7;
+        color: #f9f7f7;
+    }
+
+    a:hover {
+        color: #3f72af;
+        text-decoration: 2px underline;
+    }
+}
+
+// MAIN SECTION COMPONENT
+
+main {
+
+    flex-wrap: wrap;
+    background-color: #dbe2ef;
+    
+    
+
+    section {
+        padding-bottom: 2rem;
+        
+    }
+
+    figure {
+        padding: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    img {
+        width: 100%;
+        max-height: auto;
+        border-radius: 20%;
+        
+    }
+
+    p {
+        font-family: $heading-font;
+        font-size: 2rem;
+        color: #1a5dae;
+        text-align: center;
+        
+    }
+
+    h1 {
+        color: #112D4E;
+        font-size: 4rem;
+        font-family: $heading-font;
+    }
+
+    div {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    button {
+        display: inline-block;
+        font-size: 2em;
+        font-family: $heading-font;
+        color: #112D4E;
+        background: transparent;
+        padding: 1rem;
+        border: 2px solid #112D4E;
+        border-radius: 2rem;
+        transition: 0.5s ease;
+    }
+
+    button:hover {
+        background: #112D4E;
+
+        color: #DBE2EF;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
     }
 
     
-}
-
-main {
-    background-color: #b3ffc1;
-    height: 100vh;
 }
 
 .about-me {
