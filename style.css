@@ -1,0 +1,46 @@
+@import url("https://fonts.cdnfonts.com/css/fantasista");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+article > * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: black;
+}
+
+header {
+  background-color: #f09a9d;
+  height: 5vh;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #5995da;
+  height: 10vh;
+  padding: 1.25rem;
+}
+
+main {
+  background-color: #b3ffc1;
+  height: 100vh;
+}
+
+.about-me {
+  background-color: #d6e9fe;
+}
+
+.projects {
+  background-color: #f5cf8e;
+}
+
+footer {
+  background-color: #f09a9d;
+}
+
+/*# sourceMappingURL=style.css.map */
