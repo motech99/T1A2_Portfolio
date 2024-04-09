@@ -1,13 +1,18 @@
-@import url('https://fonts.cdnfonts.com/css/fantasista');
+@import url("https://fonts.cdnfonts.com/css/fantasista");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-* { 
+
+// CREATED A VARIABLE FOR CUSTOM FONT FAMILY
+$font-heading: "Fantasista", sans-serif;
+$primary-font: "Quicksand", sans-serif;
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-article > * {
+body > * {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,32 +21,65 @@ article > * {
     color: black;
 }
 
+// HEADER COMPONENT 
 header {
-    background-color: #f09a9d;
+    background: #112D4E;
     height: 5vh;
-    padding: 1rem;
-  }
+    padding: 2rem;
+    font-family: $font-heading;
 
+    a {
+        display: inline-block;
+    }
+
+    a:link,
+    a:visited {
+        font-size: 3rem;
+        text-decoration: none;
+        color: #F9F7F7;
+    }
+    
+    a:hover {
+        color: #4a84cb;
+        transition: 1s;
+    }
+    
+}
+
+// NAV COMPONENT
 nav {
     background-color: #5995da;
     height: 10vh;
     padding: 1.25rem;
+    font-family: $font-heading;
+
+    a {
+        display: inline-block;
+        padding: 1.5rem;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: #F9F7F7;
+    }
+
     
-  }
-  
-  main {
+}
+
+main {
     background-color: #b3ffc1;
     height: 100vh;
-  }
-  
-  .about-me {
+}
+
+.about-me {
     background-color: #d6e9fe;
-  }
-  
-  .projects {
+}
+
+.projects {
     background-color: #f5cf8e;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #f09a9d;
-  }
+}
