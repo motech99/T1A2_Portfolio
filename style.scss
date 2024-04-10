@@ -7,30 +7,30 @@ $primary-font: "Quicksand", sans-serif;
 
 // MIXINS
 @mixin theme-heading($theme-heading: #112d4e) {
-  background: $theme-heading;
-  font-family: $heading-font;
+    background: $theme-heading;
+    font-family: $heading-font;
 }
 
 @mixin headings {
-  font-family: $heading-font;
-  font-size: 3rem;
-  padding: 1rem;
+    font-family: $heading-font;
+    font-size: 3rem;
+    padding: 1rem;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 // Targeting all elements in the body
 article > * {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
 }
 
 // Removing default styling for a tag
@@ -38,230 +38,267 @@ a,
 a:link,
 a:visited,
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 // MOBILE SCREEN HOME PAGE
 
 // HEADER COMPONENT
 header {
-  @include theme-heading;
+    @include theme-heading;
 
-  height: 5vh;
-  padding: 2.5rem;
+    height: 5vh;
+    padding: 2.5rem;
 
-  a {
-    display: inline-block;
-    transition: all 0.5s ease-in-out;
-  }
+    a {
+        display: inline-block;
+        transition: all 0.5s ease-in-out;
+    }
 
-  a:link,
-  a:visited {
-    font-size: 3rem;
-    text-decoration: none;
-    color: #f9f7f7;
-  }
+    a:link,
+    a:visited {
+        font-size: 3rem;
+        text-decoration: none;
+        color: #f9f7f7;
+    }
 
-  a:hover {
-    color: #4a84cb;
-    transition: 1s;
-  }
+    a:hover {
+        color: #4a84cb;
+        transition: 1s;
+    }
 }
 
 // NAV COMPONENT
 nav {
-  height: 10vh;
-  padding: 1.25rem;
-  @include theme-heading;
+    height: 10vh;
+    padding: 1.25rem;
+    @include theme-heading;
 
-  a {
-    display: inline-block;
-    padding: 1.5rem;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: 1s;
-  }
+    a {
+        display: inline-block;
+        padding: 1.5rem;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: 1s;
+    }
 
-  a:link,
-  a:visited {
-    color: #f9f7f7;
-  }
+    a:link,
+    a:visited {
+        color: #f9f7f7;
+    }
 
-  a:hover {
-    color: #3f72af;
-    text-decoration: 2px underline;
-  }
+    a:hover {
+        color: #3f72af;
+        text-decoration: 2px underline;
+    }
 }
 
 // MAIN SECTION COMPONENT
 main {
-  background-color: #dbe2ef;
-  height: auto;
+    background-color: #dbe2ef;
+    height: auto;
 
-  section {
-    padding-bottom: 1rem;
-  }
-
-  figure {
-    padding: 2rem;
-    padding-bottom: 0.5rem;
-  }
-
-  img {
-    width: 100%;
-    padding: 2rem;
-    max-height: auto;
-    border-radius: 3rem;
-  }
-
-  p {
-    font-family: $heading-font;
-    font-size: 2rem;
-    color: #1a5dae;
-    text-align: center;
-  }
-
-  h1 {
-    color: #112d4e;
-    font-size: 4rem;
-    font-family: $heading-font;
-  }
-
-  .button-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  button {
-    font-size: 1.5em;
-    font-family: $heading-font;
-    color: #112d4e;
-    background: transparent;
-    padding: 1rem;
-    border: 2px solid #112d4e;
-    border-radius: 2rem;
-    transition: 0.5s ease;
-  }
-
-  button:hover {
-    background: #112d4e;
-    color: #dbe2ef;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-  }
-
-  .icons-container {
-    margin-top: 1rem;
-    padding: 1rem;
-
-    i {
-      margin-right: 1rem;
+    section {
+        padding-bottom: 1rem;
     }
-  }
+
+    figure {
+        padding: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    img {
+        width: 100%;
+        padding: 2rem;
+        max-height: auto;
+        border-radius: 3rem;
+    }
+
+    p {
+        font-family: $heading-font;
+        font-size: 2rem;
+        color: #1a5dae;
+        text-align: center;
+    }
+
+    h1 {
+        color: #112d4e;
+        font-size: 4rem;
+        font-family: $heading-font;
+    }
+
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        font-size: 1.5em;
+        font-family: $heading-font;
+        color: #112d4e;
+        background: transparent;
+        padding: 1rem;
+        border: 2px solid #112d4e;
+        border-radius: 2rem;
+        transition: 0.5s ease;
+    }
+
+    button:hover {
+        background: #112d4e;
+        color: #dbe2ef;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .icons-container {
+        margin-top: 1rem;
+        padding: 1rem;
+
+        i {
+            margin-right: 1rem;
+        }
+    }
 }
 
 .about-me,
 .projects {
-  h1 {
-    @include headings;
-  }
+    h1 {
+        @include headings;
+    }
 }
 
 // ABOUT ME COMPONENT
 
 .about-me {
-  background: #3f72af;
-  height: auto;
+    background: #3f72af;
+    height: auto;
 
-  h1 {
-    color: #f9f7f7;
-  }
+    h1 {
+        color: #f9f7f7;
+    }
 
-  figure {
-    padding: 0 2rem;
-  }
+    figure {
+        padding: 0 2rem;
+    }
 
-  img {
-    width: 100%;
-    border-radius: 3rem;
-  }
+    img {
+        width: 100%;
+        border-radius: 3rem;
+    }
 
-  p {
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-family: $primary-font;
-    color: #f9f7f7;
-  }
+    p {
+        padding: 2rem;
+        font-size: 1.5rem;
+        font-family: $primary-font;
+        color: #f9f7f7;
+    }
 }
 
 // PROEJCTS COMPONENT
 .projects {
-  background: #dbe2ef;
-  height: auto;
-  color: #112d4e;
-  text-align: center;
-
-
-  .project-container {
-    padding: 0 2rem 4rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-    color: #f9f7f7;
-    padding: 1rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-    color: #f9f7f7;
-    font-family: $primary-font;
-    margin: 1rem;
-  }
-
-  //   PROJECT 1 CARD
-
-  .project-card {
-    font-family: $heading-font;
-    width: 80%;
+    background: #dbe2ef;
     height: auto;
-    background: #112d4e;
-    color: #f9f7f7;
-    margin-bottom: 2rem;
+    color: #112d4e;
+    text-align: center;
 
-    img {
-      width: 100%;
-      padding: 1rem;
+
+    .project-container {
+        padding: 0 2rem 4rem;
     }
 
-    a:hover {
-      background: #547eb2;
-      transition: 0.2s ease-in-out;
+    h2 {
+        font-size: 2.5rem;
+        color: #f9f7f7;
+        padding: 1rem;
     }
-  }
+
+    p {
+        font-size: 1.2rem;
+        color: #f9f7f7;
+        font-family: $primary-font;
+        margin: 1rem;
+    }
+
+    //   PROJECT 1 CARD
+
+    .project-card {
+        font-family: $heading-font;
+        width: 80%;
+        height: auto;
+        background: #112d4e;
+        color: #f9f7f7;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+            padding: 1rem;
+        }
+
+        a:hover {
+            background: #547eb2;
+            transition: 0.2s ease-in-out;
+        }
+    }
 }
 
 footer {
-  background: #112D4E;
-  padding: 0.5rem;
-  height: auto;
+    background: #112D4E;
+    padding: 0.5rem;
+    height: auto;
 
-  h1 {
-    color: #F9F7F7;
-    font-family: $heading-font;
-    font-size: 2.5rem;
-    padding-bottom: 0.5rem;
-  }
-  .icon-container-footer {
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem;
-
-    i:first-child{
-        padding:  1rem;
+    h1 {
+        color: #F9F7F7;
+        font-family: $heading-font;
+        font-size: 2.5rem;
+        padding-bottom: 0.5rem;
     }
+
+    .icon-container-footer {
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem;
+
+        i:first-child {
+            padding: 1rem;
+        }
+
+    }
+
+}
+
+// Media QUERIES FOR TABLE SIZE SCREENS
+
+@media only screen and (min-width: 750px) {
+
+     header {
+        position: absolute;
+        justify-content: start;     
+        padding-top: 1.5em;   
+        
+
+        a:link,
+        a:visited {
+            font-size: 2.5rem;
+        }
+
+       
+
+    }
+
+    nav {
+        justify-content: end;
+
+        a:link,
+        a:visited {
+            font-size: 1.5rem;
+            z-index: 2;
+        }
+    }
+
     
-  }
+
+
+ 
 
 }

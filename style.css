@@ -207,4 +207,24 @@ footer .icon-container-footer i:first-child {
   padding: 1rem;
 }
 
+@media only screen and (min-width: 750px) {
+  header {
+    position: absolute;
+    justify-content: start;
+    padding-top: 1.5em;
+  }
+  header a:link,
+  header a:visited {
+    font-size: 2.5rem;
+  }
+  nav {
+    justify-content: end;
+  }
+  nav a:link,
+  nav a:visited {
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
