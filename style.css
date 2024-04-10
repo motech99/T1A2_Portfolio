@@ -249,12 +249,6 @@ footer .icon-container-footer i:first-child {
     grid-column-end: 3;
     margin: 2rem;
   }
-  main section p {
-    font-size: 2.5rem;
-  }
-  main section h1 {
-    font-size: 4rem;
-  }
   main .button-container {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -263,9 +257,6 @@ footer .icon-container-footer i:first-child {
     position: relative;
     top: 8rem;
   }
-  main img {
-    padding: 0;
-  }
   main .icons-container {
     grid-row-start: 3;
     grid-row-end: 3;
@@ -273,11 +264,20 @@ footer .icon-container-footer i:first-child {
     grid-column-end: 2;
     margin-top: 0;
   }
+  main p {
+    font-size: 2.5rem;
+  }
+  main h1 {
+    font-size: 4rem;
+  }
+  main img {
+    padding: 0;
+  }
   .about-me h1 {
     font-size: 4rem;
   }
   .about-me figure {
-    width: 80%;
+    width: 50%;
   }
   .projects h1 {
     font-size: 4rem;
@@ -287,8 +287,35 @@ footer .icon-container-footer i:first-child {
   }
   .projects .project-card {
     max-width: 300px;
-    max-height: 500px;
     margin: 1rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  main {
+    overflow: hidden;
+  }
+  main p {
+    font-size: 4rem;
+  }
+  main h1 {
+    font-size: 5rem;
+  }
+  main img {
+    margin: 3rem;
+    width: 80%;
+  }
+  main .button-container {
+    top: 10rem;
+    left: -5rem;
+  }
+  main .icons-container {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    position: relative;
+    top: 10rem;
+    left: 7rem;
   }
 }
 
