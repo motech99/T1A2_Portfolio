@@ -256,6 +256,7 @@ footer .icon-container-footer i:first-child {
     grid-column-end: 2;
     position: relative;
     top: 8rem;
+    z-index: 1;
   }
   main .icons-container {
     grid-row-start: 3;
@@ -316,6 +317,40 @@ footer .icon-container-footer i:first-child {
     position: relative;
     top: 10rem;
     left: 7rem;
+  }
+  .about-me {
+    display: grid;
+    height: auto;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    align-items: start;
+    padding: 1rem;
+  }
+  .about-me h1 {
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: -2;
+  }
+  .about-me figure {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 1rem;
+    width: 100%;
+  }
+  .about-me section {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 0rem;
+    padding: 1rem;
+    width: 60ch;
+  }
+  .about-me section p {
+    padding-top: 0;
   }
 }
 
