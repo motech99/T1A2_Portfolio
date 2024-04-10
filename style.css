@@ -188,12 +188,12 @@ main .icons-container i {
 }
 
 footer {
-  background: #112D4E;
+  background: #112d4e;
   padding: 0.5rem;
   height: auto;
 }
 footer h1 {
-  color: #F9F7F7;
+  color: #f9f7f7;
   font-family: "Fantasista", sans-serif;
   font-size: 2.5rem;
   padding-bottom: 0.5rem;
@@ -224,6 +224,52 @@ footer .icon-container-footer i:first-child {
   nav a:visited {
     font-size: 1.5rem;
     z-index: 2;
+  }
+  main {
+    display: grid;
+    height: auto;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  main figure {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-top: 5rem;
+  }
+  main section {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 2rem;
+  }
+  main section p {
+    font-size: 2.5rem;
+  }
+  main section h1 {
+    font-size: 4rem;
+  }
+  main .button-container {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    position: relative;
+    top: 8rem;
+  }
+  main img {
+    padding: 0;
+  }
+  main .icons-container {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-top: 0;
   }
 }
 
