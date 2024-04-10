@@ -1,9 +1,9 @@
 @import url("https://fonts.cdnfonts.com/css/fantasista");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 // VARIABLES
 $heading-font: "Fantasista", sans-serif;
-$primary-font: "Lato", sans-serif;
+$primary-font: "Quicksand", sans-serif;
 
 // MIXINS
 @mixin theme-heading($theme-heading: #112d4e) {
@@ -30,7 +30,6 @@ article > * {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color: #112d4e;
   flex-wrap: wrap;
 }
 
@@ -169,6 +168,8 @@ main {
   }
 }
 
+// ABOUT ME COMPONENT
+
 .about-me {
   background: #3f72af;
   height: auto;
@@ -194,22 +195,73 @@ main {
   }
 }
 
+// PROEJCTS COMPONENT
 .projects {
   background: #dbe2ef;
   height: auto;
+  color: #112d4e;
+  text-align: center;
+
 
   .project-container {
-    padding: 0 4rem 4rem;
+    padding: 0 2rem 4rem;
   }
 
-  .project-1 {
+  h2 {
+    font-size: 2.5rem;
+    color: #f9f7f7;
+    padding: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #f9f7f7;
+    font-family: $primary-font;
+    margin: 1rem;
+  }
+
+  //   PROJECT 1 CARD
+
+  .project-card {
+    font-family: $heading-font;
     width: 80%;
-    height: 40vh;
+    height: auto;
     background: #112d4e;
-  }
+    color: #f9f7f7;
+    margin-bottom: 2rem;
 
+    img {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    a:hover {
+      background: #547eb2;
+      transition: 0.2s ease-in-out;
+    }
+  }
 }
 
 footer {
-  background: #f09a9d;
+  background: #112D4E;
+  padding: 0.5rem;
+  height: auto;
+
+  h1 {
+    color: #F9F7F7;
+    font-family: $heading-font;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .icon-container-footer {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+
+    i:first-child{
+        padding:  1rem;
+    }
+    
+  }
+
 }
