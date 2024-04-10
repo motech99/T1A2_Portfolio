@@ -13,6 +13,7 @@ article > * {
   align-items: center;
   font-size: 1.5rem;
   color: #112d4e;
+  flex-wrap: wrap;
 }
 
 a,
@@ -66,7 +67,6 @@ nav a:hover {
 }
 
 main {
-  flex-wrap: wrap;
   background-color: #dbe2ef;
   height: auto;
 }
@@ -81,7 +81,7 @@ main img {
   width: 100%;
   padding: 2rem;
   max-height: auto;
-  border-radius: 20%;
+  border-radius: 3rem;
 }
 main p {
   font-family: "Fantasista", sans-serif;
@@ -90,7 +90,7 @@ main p {
   text-align: center;
 }
 main h1 {
-  color: #112D4E;
+  color: #112d4e;
   font-size: 4rem;
   font-family: "Fantasista", sans-serif;
 }
@@ -102,16 +102,16 @@ main .button-container {
 main button {
   font-size: 1.5em;
   font-family: "Fantasista", sans-serif;
-  color: #112D4E;
+  color: #112d4e;
   background: transparent;
   padding: 1rem;
-  border: 2px solid #112D4E;
+  border: 2px solid #112d4e;
   border-radius: 2rem;
   transition: 0.5s ease;
 }
 main button:hover {
-  background: #112D4E;
-  color: #DBE2EF;
+  background: #112d4e;
+  color: #dbe2ef;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
@@ -123,17 +123,49 @@ main .icons-container i {
   margin-right: 1rem;
 }
 
+.about-me h1,
+.projects h1 {
+  font-family: "Fantasista", sans-serif;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
 .about-me {
-  background-color: #3F72AF;
+  background: #3f72af;
   height: auto;
+}
+.about-me h1 {
+  color: #f9f7f7;
+}
+.about-me figure {
+  padding: 0 2rem;
+}
+.about-me img {
+  width: 100%;
+  border-radius: 3rem;
+}
+.about-me p {
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  color: #f9f7f7;
 }
 
 .projects {
-  background-color: #f5cf8e;
+  background: #dbe2ef;
+  height: auto;
+}
+.projects .project-container {
+  padding: 0 4rem 4rem;
+}
+.projects .project-1 {
+  width: 80%;
+  height: 40vh;
+  background: #112d4e;
 }
 
 footer {
-  background-color: #f09a9d;
+  background: #f09a9d;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/fantasista");
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap");
 
 // VARIABLES
 $heading-font: "Fantasista", sans-serif;
@@ -7,24 +7,31 @@ $primary-font: "Lato", sans-serif;
 
 // MIXINS
 @mixin theme-heading($theme-heading: #112d4e) {
-    background: $theme-heading;
-    font-family: $heading-font;
+  background: $theme-heading;
+  font-family: $heading-font;
+}
+
+@mixin headings {
+  font-family: $heading-font;
+  font-size: 3rem;
+  padding: 1rem;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 // Targeting all elements in the body
 article > * {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color: #112d4e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #112d4e;
+  flex-wrap: wrap;
 }
 
 // Removing default styling for a tag
@@ -32,147 +39,177 @@ a,
 a:link,
 a:visited,
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 // MOBILE SCREEN HOME PAGE
 
 // HEADER COMPONENT
 header {
-    @include theme-heading;
+  @include theme-heading;
 
-    height: 5vh;
-    padding: 2.5rem;
+  height: 5vh;
+  padding: 2.5rem;
 
-    a {
-        display: inline-block;
-        transition: all 0.5s ease-in-out;
-    }
+  a {
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+  }
 
-    a:link,
-    a:visited {
-        font-size: 3rem;
-        text-decoration: none;
-        color: #f9f7f7;
-    }
+  a:link,
+  a:visited {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #f9f7f7;
+  }
 
-    a:hover {
-        color: #4a84cb;
-        transition: 1s;
-    }
+  a:hover {
+    color: #4a84cb;
+    transition: 1s;
+  }
 }
 
 // NAV COMPONENT
 nav {
-    height: 10vh;
-    padding: 1.25rem;
-    @include theme-heading;
+  height: 10vh;
+  padding: 1.25rem;
+  @include theme-heading;
 
-    a {
-        display: inline-block;
-        padding: 1.5rem;
-        text-decoration: underline;
-        text-decoration-color: transparent;
-        transition: 1s;
-    }
+  a {
+    display: inline-block;
+    padding: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: 1s;
+  }
 
-    a:link,
-    a:visited {
-        color: #f9f7f7;
-    }
+  a:link,
+  a:visited {
+    color: #f9f7f7;
+  }
 
-    a:hover {
-        color: #3f72af;
-        text-decoration: 2px underline;
-    }
+  a:hover {
+    color: #3f72af;
+    text-decoration: 2px underline;
+  }
 }
 
 // MAIN SECTION COMPONENT
 main {
+  background-color: #dbe2ef;
+  height: auto;
 
-    flex-wrap: wrap;
-    background-color: #dbe2ef;
-    height: auto;
-    
-    section {
-        padding-bottom: 1rem;
-        
+  section {
+    padding-bottom: 1rem;
+  }
+
+  figure {
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  img {
+    width: 100%;
+    padding: 2rem;
+    max-height: auto;
+    border-radius: 3rem;
+  }
+
+  p {
+    font-family: $heading-font;
+    font-size: 2rem;
+    color: #1a5dae;
+    text-align: center;
+  }
+
+  h1 {
+    color: #112d4e;
+    font-size: 4rem;
+    font-family: $heading-font;
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    font-size: 1.5em;
+    font-family: $heading-font;
+    color: #112d4e;
+    background: transparent;
+    padding: 1rem;
+    border: 2px solid #112d4e;
+    border-radius: 2rem;
+    transition: 0.5s ease;
+  }
+
+  button:hover {
+    background: #112d4e;
+    color: #dbe2ef;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .icons-container {
+    margin-top: 1rem;
+    padding: 1rem;
+
+    i {
+      margin-right: 1rem;
     }
+  }
+}
 
-    figure {
-        padding: 2rem;
-        padding-bottom: 0.5rem;
-    }
-
-    img {
-        width: 100%;
-        padding: 2rem;
-        max-height: auto;
-        border-radius: 20%;
-        
-    }
-
-    p {
-        font-family: $heading-font;
-        font-size: 2rem;
-        color: #1a5dae;
-        text-align: center;
-        
-    }
-
-    h1 {
-        color: #112D4E;
-        font-size: 4rem;
-        font-family: $heading-font;
-    }
-
-    .button-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-
-    button {
-        font-size: 1.5em;
-        font-family: $heading-font;
-        color: #112D4E;
-        background: transparent;
-        padding: 1rem;
-        border: 2px solid #112D4E;
-        border-radius: 2rem;
-        transition: 0.5s ease;
-        
-    }
-
-    button:hover {
-        background: #112D4E;
-        color: #DBE2EF;
-        transition: 0.5s ease-in-out;
-        cursor: pointer;
-    }
-    
-    .icons-container {
-        margin-top: 1rem;
-        padding: 1rem;
-
-        i {
-            margin-right: 1rem;
-        }
-
-    }
-    
+.about-me,
+.projects {
+  h1 {
+    @include headings;
+  }
 }
 
 .about-me {
-    background-color: #3F72AF;
-    height: auto;
+  background: #3f72af;
+  height: auto;
+
+  h1 {
+    color: #f9f7f7;
+  }
+
+  figure {
+    padding: 0 2rem;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 3rem;
+  }
+
+  p {
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: $primary-font;
+    color: #f9f7f7;
+  }
 }
 
 .projects {
-    background-color: #f5cf8e;
+  background: #dbe2ef;
+  height: auto;
+
+  .project-container {
+    padding: 0 4rem 4rem;
+  }
+
+  .project-1 {
+    width: 80%;
+    height: 40vh;
+    background: #112d4e;
+  }
+
 }
 
 footer {
-    background-color: #f09a9d;
+  background: #f09a9d;
 }
