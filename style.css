@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body > * {
+article > * {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -68,9 +68,10 @@ nav a:hover {
 main {
   flex-wrap: wrap;
   background-color: #dbe2ef;
+  height: auto;
 }
 main section {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 main figure {
   padding: 2rem;
@@ -78,6 +79,7 @@ main figure {
 }
 main img {
   width: 100%;
+  padding: 2rem;
   max-height: auto;
   border-radius: 20%;
 }
@@ -92,15 +94,13 @@ main h1 {
   font-size: 4rem;
   font-family: "Fantasista", sans-serif;
 }
-main div {
-  display: flex;
+main .button-container {
   width: 100%;
+  display: flex;
   justify-content: center;
-  padding-bottom: 1rem;
 }
 main button {
-  display: inline-block;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Fantasista", sans-serif;
   color: #112D4E;
   background: transparent;
@@ -115,9 +115,17 @@ main button:hover {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
+main .icons-container {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+main .icons-container i {
+  margin-right: 1rem;
+}
 
 .about-me {
-  background-color: #d6e9fe;
+  background-color: #3F72AF;
+  height: auto;
 }
 
 .projects {

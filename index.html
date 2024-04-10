@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohammed Hani</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.5/src/app/ci.min.css"
+  />
   </head>
   <body>
+    <article>
+
+
     <!-- HEADER COMPONENT -->
       <header>
         <a href="./index.html">Mohammed Hani</a>
@@ -17,7 +24,6 @@
                     <a href="#">About</a></li>
                     <a href="#">Projects</a></li>
                     <a href="#">Blogs</a></li>
-
         </nav>
         <!-- MAIN SECTION COMPONENT -->
       <main>
@@ -29,14 +35,26 @@
             <h1>Mohammed Hani</h1>
             <p>Full-Stack Developer</p>
         </section>
-        <div>
-            <a href="" download>
-                <button>Download CV</button>
-              </a>
+        <!-- BUTTON COMPONENT FOR CV -->
+        <div class="button-container">
+          <a href="./docs/Resume/Mohammed_Hani-Resume.pdf"  target="_blank" download>
+            <button>Download CV</button>
+          </a>
+        </div>
+        <!-- ICONS COMPONENT -->
+        <div class="icons-container">
+          <a href="https://github.com/motech99">
+            <i class="ci ci-github ci-3x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mohammed-hani-410709239/">
+            <i class="ci ci-linkedin ci-3x"></i>
+          </a>
+          
         </div>
       </main>
       <article class="about-me">ABOUT ME</article>
       <article class="projects">PROJECTS</article>
       <footer>FOOTER</footer>
+    </article>
   </body>
 </html>

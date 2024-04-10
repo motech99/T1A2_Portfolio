@@ -18,7 +18,7 @@ $primary-font: "Lato", sans-serif;
 }
 
 // Targeting all elements in the body
-body > * {
+article > * {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -88,16 +88,14 @@ nav {
 }
 
 // MAIN SECTION COMPONENT
-
 main {
 
     flex-wrap: wrap;
     background-color: #dbe2ef;
+    height: auto;
     
-    
-
     section {
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         
     }
 
@@ -108,6 +106,7 @@ main {
 
     img {
         width: 100%;
+        padding: 2rem;
         max-height: auto;
         border-radius: 20%;
         
@@ -127,16 +126,15 @@ main {
         font-family: $heading-font;
     }
 
-    div {
-        display: flex;
+    .button-container {
         width: 100%;
+        display: flex;
         justify-content: center;
-        padding-bottom: 1rem;
     }
 
+
     button {
-        display: inline-block;
-        font-size: 2em;
+        font-size: 1.5em;
         font-family: $heading-font;
         color: #112D4E;
         background: transparent;
@@ -144,21 +142,31 @@ main {
         border: 2px solid #112D4E;
         border-radius: 2rem;
         transition: 0.5s ease;
+        
     }
 
     button:hover {
         background: #112D4E;
-
         color: #DBE2EF;
         transition: 0.5s ease-in-out;
         cursor: pointer;
     }
+    
+    .icons-container {
+        margin-top: 1rem;
+        padding: 1rem;
 
+        i {
+            margin-right: 1rem;
+        }
+
+    }
     
 }
 
 .about-me {
-    background-color: #d6e9fe;
+    background-color: #3F72AF;
+    height: auto;
 }
 
 .projects {
