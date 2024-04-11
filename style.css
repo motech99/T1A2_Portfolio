@@ -379,5 +379,71 @@ footer .icon-container-footer i:first-child {
     font-size: 5rem;
   }
 }
+.article--container {
+  background-color: #dbe2ef;
+}
+
+.blog--section {
+  background: #dbe2ef;
+}
+
+.headings-container {
+  padding: 2rem;
+}
+
+.blog-main-heading {
+  font-family: "Fantasista", sans-serif;
+  color: #112d4e;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.blog-avatar img {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+
+.image-section p {
+  padding: 1rem;
+  font-family: "Fantasista", sans-serif;
+  color: #112d4e;
+}
+.image-section .font-sizing {
+  font-size: 1.5rem;
+}
+
+.article-image {
+  margin: 1rem;
+}
+.article-image img {
+  width: 100%;
+}
+
+.article-sizing p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: #112d4e;
+}
+
+@media only screen and (min-width: 750px) {
+  .image-section {
+    justify-content: start;
+    padding-left: 3rem;
+  }
+  .blog-main-heading {
+    font-size: 4rem;
+  }
+  .image-section .font-sizing {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .blog--section {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -41,8 +41,6 @@ a:hover {
   text-decoration: none;
 }
 
-// MOBILE SCREEN HOME PAGE
-
 // HEADER COMPONENT
 header {
   @include theme-heading;
@@ -267,7 +265,7 @@ footer {
   }
 }
 
-// MEDIA QUERIES FOR TABLET SIZE SCREENS
+// ******** MEDIA QUERIES FOR TABLET SIZE SCREENS (MAIN PAGE) *************
 
 @media only screen and (min-width: 750px) {
   // NAVIGATION AND HEADER COMPONENTS
@@ -293,6 +291,7 @@ footer {
   }
 
   // MAIN SECTION COMPONENT
+
   main {
     display: grid;
     min-height: 50vh;
@@ -338,8 +337,8 @@ footer {
       top: 11rem;
       left: 0.5rem;
       margin-top: 2rem;
-
     }
+
     p {
       font-size: 2.5rem;
     }
@@ -382,6 +381,8 @@ footer {
   }
 }
 
+// ******** MEDIA QUERIES FOR DESKTOP SIZE SCREENS (MAIN PAGE) *************
+
 @media only screen and (min-width: 1100px) {
   // MAIN COMPONENET
   main {
@@ -404,6 +405,7 @@ footer {
       padding-bottom: 4rem;
     }
   }
+
   //   ABOUT ME COMPONENT
   .about-me {
     min-height: 70vh;
@@ -416,7 +418,6 @@ footer {
     overflow: hidden;
     align-items: start;
 
-  
     img {
       min-width: 70%;
     }
@@ -440,6 +441,7 @@ footer {
       p {
         padding-top: 0;
       }
+
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 2;
@@ -451,41 +453,126 @@ footer {
     }
   }
 }
-// Added Media query to stop image from resizing too small in the about section
+
+// ADDED MEDIA QUERY TO STOP IMAGE FROM RESIZING TOO SMALL IN THE ABOUT SECTION
 @media only screen and (min-width: 1101px) {
-    .about-me {
-        img {
-            width: 350px;
-        }
+  .about-me {
+    img {
+      width: 350px;
     }
-
-
-    
+  }
 }
 
-
-// BLOGS PAGE
+// ************************* BLOGS PAGE ****************************
 
 .blogs-title-width {
-    width: 100%;
+  width: 100%;
 }
 
-
 @media only screen and (min-width: 1724px) {
+  .blogs {
+    padding-bottom: 11rem;
 
-    .blogs {
-       padding-bottom: 11rem;
-        
+    h1 {
+      font-size: 5rem;
+    }
+  }
+}
 
-      
-        h1 {
-            font-size: 5rem;
-        }
+// ************************* INDIVIDUAL BLOG PAGE ****************************
 
-        
+// BLOG HEADING COMPONENT
+
+.article--container {
+    background-color: #dbe2ef;
+}
+.blog--section {
+  background: #dbe2ef;
+}
+
+.headings-container {
+  padding: 2rem;
+}
+
+.blog-main-heading {
+  font-family: $heading-font;
+  color: #112d4e;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.blog-avatar {
+
+  img {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+  }
+}
+
+// AVATAR COMPONENT
+.image-section {
+  p {
+    padding: 1rem;
+    font-family: $heading-font;
+    color: #112d4e;
+  }
+
+  .font-sizing {
+    font-size: 1.5rem;
+  }
+}
+// ARTICLE MAIN IMAGE COMPONENT
+.article-image {
+  margin: 1rem;
+
+  img {
+    width: 100%;
+  }
+}
+.article-sizing {
+  p {
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #112d4e;
+  }
+}
+
+// *********** TABLET SIZE SCREEN INDIVIDUAL BLOG **************
+
+@media only screen and (min-width: 750px) {
+
+
+    .image-section {
+        justify-content: start;
+        padding-left: 3rem;
+
+    }
+    
+
+    .blog-main-heading {
+        font-size: 4rem;
+    }
+
+  // AVATAR COMPONENT
+
+  .image-section .font-sizing {
+    font-size: 2rem;
+  }
+
+//   .article-sizing {
+//     justify-content: center;
+//     margin: 1rem 5rem;
+//   }
+}
+
+// *********** TABLET SIZE SCREEN INDIVIDUAL BLOG **************
+@media only screen and (min-width: 1200px) {
+
+    .blog--section {
+        width: 800px;
+        margin: 0 auto;
     }
 
 }
-
-
-
