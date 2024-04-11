@@ -229,6 +229,7 @@ footer .icon-container-footer i:first-child {
   }
   main {
     display: grid;
+    min-height: 50vh;
     height: auto;
     text-align: center;
     grid-template-columns: repeat(2, 1fr);
@@ -240,14 +241,13 @@ footer .icon-container-footer i:first-child {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
   main section {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
-    margin: 2rem;
   }
   main .button-container {
     grid-row-start: 1;
@@ -255,14 +255,16 @@ footer .icon-container-footer i:first-child {
     grid-column-start: 2;
     grid-column-end: 2;
     position: relative;
-    top: 8rem;
-    z-index: 1;
+    top: 6rem;
   }
   main .icons-container {
-    grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: -2;
+    grid-column-end: -2;
+    position: relative;
+    top: 11rem;
+    left: 0.5rem;
     margin-top: 0;
   }
   main p {
@@ -277,7 +279,7 @@ footer .icon-container-footer i:first-child {
   .about-me h1 {
     font-size: 4rem;
   }
-  .about-me figure {
+  .about-me img {
     width: 50%;
   }
   .projects h1 {
@@ -305,27 +307,22 @@ footer .icon-container-footer i:first-child {
     margin: 3rem;
     width: 80%;
   }
-  main .button-container {
-    top: 10rem;
-    left: -5rem;
-  }
-  main .icons-container {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    position: relative;
-    top: 10rem;
-    left: 7rem;
+  main section p:last-child {
+    padding-bottom: 4rem;
   }
   .about-me {
+    min-height: 70vh;
+    height: auto;
+    text-align: center;
     display: grid;
     height: auto;
     text-align: center;
     grid-template-columns: repeat(2, 1fr);
     overflow: hidden;
     align-items: start;
-    padding: 1rem;
+  }
+  .about-me img {
+    min-width: 70%;
   }
   .about-me h1 {
     grid-row-end: 1;
@@ -347,10 +344,14 @@ footer .icon-container-footer i:first-child {
     grid-column-end: 3;
     margin-top: 0rem;
     padding: 1rem;
-    width: 60ch;
   }
   .about-me section p {
     padding-top: 0;
+  }
+}
+@media only screen and (min-width: 1101px) {
+  .about-me img {
+    width: 350px;
   }
 }
 
