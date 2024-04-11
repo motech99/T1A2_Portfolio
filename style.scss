@@ -188,7 +188,6 @@ main {
   }
 
   p {
-    width: 50ch;
     padding: 2rem;
     font-size: 1.5rem;
     font-family: $primary-font;
@@ -316,6 +315,7 @@ footer {
       grid-column-end: 3;
     }
 
+    // BUTTON COMPONENT
     .button-container {
       grid-row-start: 1;
       grid-row-end: 2;
@@ -323,7 +323,10 @@ footer {
       grid-column-end: 2;
       position: relative;
       top: 6rem;
+      padding-top: 2rem;
     }
+
+    // ICON COMPONENT
     .icons-container {
       grid-row-start: 1;
       grid-row-end: 2;
@@ -332,7 +335,8 @@ footer {
       position: relative;
       top: 11rem;
       left: 0.5rem;
-      margin-top: 0;
+      margin-top: 2rem;
+
     }
     p {
       font-size: 2.5rem;
@@ -358,7 +362,7 @@ footer {
     }
   }
 
-  //   PROJECTS COMPONENT
+  // PROJECTS COMPONENT
   .projects {
     h1 {
       font-size: 4rem;
@@ -409,9 +413,7 @@ footer {
     overflow: hidden;
     align-items: start;
 
-    figure {
-    }
-
+  
     img {
       min-width: 70%;
     }
@@ -441,10 +443,11 @@ footer {
       grid-column-end: 3;
       margin-top: 0rem;
       padding: 1rem;
+      font-size: 1rem;
+      line-height: 1.3;
     }
   }
 }
-
 
 // Added Media query to stop image from resizing too small in the about section
 @media only screen and (min-width: 1101px) {
