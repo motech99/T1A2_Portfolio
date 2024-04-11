@@ -162,7 +162,8 @@ main {
 }
 
 .about-me,
-.projects {
+.projects,
+.blogs {
   h1 {
     @include headings;
   }
@@ -195,14 +196,15 @@ main {
   }
 }
 
-// PROEJCTS COMPONENT
-.projects {
+// PROEJCTS COMPONENT &  BLOGS COMPONENT
+.projects,
+.blogs {
   background: #dbe2ef;
   height: auto;
   color: #112d4e;
   text-align: center;
 
-  .project-container {
+  .cards-container {
     padding: 0 2rem 4rem;
   }
 
@@ -222,7 +224,7 @@ main {
 
   //   PROJECT 1 CARD
 
-  .project-card {
+  .card {
     font-family: $heading-font;
     width: 80%;
     height: auto;
@@ -363,16 +365,17 @@ footer {
   }
 
   // PROJECTS COMPONENT
-  .projects {
+  .projects,
+  .blogs {
     h1 {
       font-size: 4rem;
     }
 
-    .project-container {
+    .cards-container {
       display: wrap;
     }
 
-    .project-card {
+    .card {
       max-width: 300px;
       margin: 1rem;
     }
@@ -448,7 +451,6 @@ footer {
     }
   }
 }
-
 // Added Media query to stop image from resizing too small in the about section
 @media only screen and (min-width: 1101px) {
     .about-me {
@@ -460,3 +462,30 @@ footer {
 
     
 }
+
+
+// BLOGS PAGE
+
+.blogs-title-width {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 1724px) {
+
+    .blogs {
+       padding-bottom: 11rem;
+        
+
+      
+        h1 {
+            font-size: 5rem;
+        }
+
+        
+    }
+
+}
+
+
+
