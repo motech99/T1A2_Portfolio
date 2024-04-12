@@ -115,7 +115,6 @@ main button:hover {
   cursor: pointer;
 }
 main .icons-container {
-  margin-top: 1rem;
   padding: 1rem;
 }
 main .icons-container i {
@@ -236,7 +235,7 @@ footer .icon-container-footer i:first-child {
   }
   main {
     display: grid;
-    min-height: 50vh;
+    min-height: 60vh;
     height: auto;
     text-align: center;
     grid-template-columns: repeat(2, 1fr);
@@ -263,7 +262,7 @@ footer .icon-container-footer i:first-child {
     grid-column-end: 2;
     position: relative;
     top: 6rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
   main .icons-container {
     grid-row-start: 1;
