@@ -23,7 +23,7 @@ $primary-font: "Quicksand", sans-serif;
   padding: 0;
 }
 
-// Targeting all elements in the body
+// TARGETING ALL ELEMENTS IN THE BODY
 article > * {
   width: 100%;
   display: flex;
@@ -33,7 +33,7 @@ article > * {
   flex-wrap: wrap;
 }
 
-// Removing default styling for a tag
+// REMOVING DEFAULT STYLING FOR A TAG
 a,
 a:link,
 a:visited,
@@ -167,7 +167,6 @@ main {
 }
 
 // ABOUT ME COMPONENT
-
 .about-me {
   background: #3f72af;
   height: auto;
@@ -219,8 +218,7 @@ main {
     margin: 1rem;
   }
 
-  //   PROJECT 1 CARD
-
+//   PROJECT 1 CARD
   .card {
     font-family: $heading-font;
     width: 80%;
@@ -241,6 +239,7 @@ main {
   }
 }
 
+// FOOTER COMPONENT
 footer {
   background: #112d4e;
   padding: 0.5rem;
@@ -252,6 +251,7 @@ footer {
     font-size: 2.5rem;
     padding-bottom: 0.5rem;
   }
+
 
   .icon-container-footer {
     display: flex;
@@ -267,7 +267,8 @@ footer {
 // ******** MEDIA QUERIES FOR TABLET SIZE SCREENS (MAIN PAGE) *************
 
 @media only screen and (min-width: 750px) {
-  // NAVIGATION AND HEADER COMPONENTS
+
+// NAVIGATION AND HEADER COMPONENTS
   header {
     position: absolute;
     justify-content: start;
@@ -289,8 +290,7 @@ footer {
     }
   }
 
-  // MAIN SECTION COMPONENT
-
+// MAIN SECTION COMPONENT
   main {
     display: grid;
     min-height: 60vh;
@@ -315,7 +315,7 @@ footer {
       grid-column-end: 3;
     }
 
-    // BUTTON COMPONENT
+// BUTTON COMPONENT
     .button-container {
       grid-row-start: 1;
       grid-row-end: 2;
@@ -326,7 +326,7 @@ footer {
       padding-top: 3rem;
     }
 
-    // ICON COMPONENT
+// ICON COMPONENT
     .icons-container {
       grid-row-start: 1;
       grid-row-end: 2;
@@ -351,7 +351,7 @@ footer {
     }
   }
 
-  //  ABOUT ME COMPONENT
+//  ABOUT ME COMPONENT
   .about-me {
     h1 {
       font-size: 4rem;
@@ -362,7 +362,7 @@ footer {
     }
   }
 
-  // PROJECTS COMPONENT
+// PROJECTS COMPONENT
   .projects,
   .blogs {
     h1 {
@@ -383,7 +383,8 @@ footer {
 // ******** MEDIA QUERIES FOR DESKTOP SIZE SCREENS (MAIN PAGE) *************
 
 @media only screen and (min-width: 1100px) {
-  // MAIN COMPONENET
+
+// MAIN COMPONENET
   main {
     overflow: hidden;
 
@@ -405,7 +406,7 @@ footer {
     }
   }
 
-  //   ABOUT ME COMPONENT
+//   ABOUT ME COMPONENT
   .about-me {
     min-height: 70vh;
     height: auto;
@@ -456,7 +457,6 @@ footer {
 // ADDED MEDIA QUERY TO STOP IMAGE FROM RESIZING TOO SMALL IN THE ABOUT SECTION
 @media only screen and (min-width: 1101px) {
   .about-me {
-
     img {
       width: 450px;
     }
@@ -482,9 +482,8 @@ footer {
 // ************************* INDIVIDUAL BLOG PAGE ****************************
 
 // BLOG HEADING COMPONENT
-
 .article--container {
-    background-color: #dbe2ef;
+  background-color: #dbe2ef;
 }
 .blog--section {
   background: #dbe2ef;
@@ -501,8 +500,8 @@ footer {
   text-align: center;
 }
 
+// AVATAR COMPONENT
 .blog-avatar {
-
   img {
     border-radius: 50%;
     width: 50px;
@@ -510,7 +509,7 @@ footer {
   }
 }
 
-// AVATAR COMPONENT
+
 .image-section {
   p {
     padding: 1rem;
@@ -543,36 +542,29 @@ footer {
 
 @media only screen and (min-width: 750px) {
 
+// AVATAR COMPONENT
+  .image-section {
+    justify-content: start;
+    padding-left: 3rem;
+  }
 
-    .image-section {
-        justify-content: start;
-        padding-left: 3rem;
+  .blog-main-heading {
+    font-size: 4rem;
+  }
 
-    }
-    
-
-    .blog-main-heading {
-        font-size: 4rem;
-    }
-
-  // AVATAR COMPONENT
+ 
 
   .image-section .font-sizing {
     font-size: 2rem;
   }
-
-//   .article-sizing {
-//     justify-content: center;
-//     margin: 1rem 5rem;
-//   }
 }
 
-// *********** TABLET SIZE SCREEN INDIVIDUAL BLOG **************
+// *********** DESKTOP SIZE SCREEN INDIVIDUAL BLOG **************
 @media only screen and (min-width: 1200px) {
-
-    .blog--section {
-        width: 800px;
-        margin: 0 auto;
-    }
-
+    
+// MAIN ARTICLE COMPONENT
+  .blog--section {
+    width: 800px;
+    margin: 0 auto;
+  }
 }
