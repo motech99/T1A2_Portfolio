@@ -456,8 +456,9 @@ footer {
 // ADDED MEDIA QUERY TO STOP IMAGE FROM RESIZING TOO SMALL IN THE ABOUT SECTION
 @media only screen and (min-width: 1101px) {
   .about-me {
+
     img {
-      width: 350px;
+      width: 450px;
     }
   }
 }
