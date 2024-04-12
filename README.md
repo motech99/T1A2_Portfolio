@@ -1,8 +1,8 @@
 # T1A2: Portfolio
 
-Portfolio Website Link: [Placeholder](https://link-url-here.org)
+Portfolio Website Link: [Click Here!](https://motech99.github.io/T1A2_Portfolio/)
 
-GitHub Repository Link: [Placeholder](https://link-url-here.org)
+GitHub Repository Link: [Click Here!](https://github.com/motech99/T1A2_Portfolio)
 
 ## Table of Content
 
