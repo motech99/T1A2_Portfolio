@@ -44,14 +44,14 @@ header a:hover {
 }
 
 nav {
-  height: 10vh;
+  height: auto;
   padding: 1.25rem;
   background: #112d4e;
   font-family: "Fantasista", sans-serif;
 }
 nav a {
   display: inline-block;
-  padding: 1.5rem;
+  padding: 1rem;
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: 1s;
@@ -445,5 +445,3 @@ footer .icon-container-footer i:first-child {
     margin: 0 auto;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

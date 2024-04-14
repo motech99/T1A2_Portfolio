@@ -68,13 +68,13 @@ header {
 
 // NAV COMPONENT
 nav {
-  height: 10vh;
+  height: auto;
   padding: 1.25rem;
   @include theme-heading;
 
   a {
     display: inline-block;
-    padding: 1.5rem;
+    padding: 1rem;
     text-decoration: underline;
     text-decoration-color: transparent;
     transition: 1s;
