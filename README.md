@@ -11,13 +11,9 @@ GitHub Repository Link: [Click Here!](https://github.com/motech99/T1A2_Portfolio
 - [Target Audience and Website Components](#target-audience-and-website-components)
 - [Tech Stack](#tech-stack)
 
-## Descripton
+## Descripton & purpose
 
-Welcome to my portfolio!
-
-### Purpose
-
-placeholder
+Welcome to my portfolio! This project was part of my assessments during Term 1 at Coder Academy. The purpose of this project was to demonstrate my understanding of HTML and CSS by creating a fully responsive portfolio. I achieved this by testing the usage of Flexbox/CSS Grid. The project also tested my understanding of how HTML works, including being able to connect multiple HTML documents, as well as the decision process of creating a website such as wireframes and mockups of the pages. Through this project, I gained valuable hands on experience in debugging errors and improved my thought process when it came to problem solving. It also helped me improve my attention to detail.
 
 ### Functionality / features
 
@@ -33,7 +29,7 @@ placeholder
 
 ![1](./docs/wireframes/Portfolio%20Sitemap.png)
 
-I have decided to go with a simple website structure based on the sitemap above. The Home page consists of two different sections: an About section and a Project section. From the home page, we can navigate to each of those sections as well as to the Blogs page. The Blogs page displays all the blogs in a section, from which we can navigate to each of the individual blogs.
+I have decided to go with a simple website structure based on the sitemap above. The Home page consists of two different sections: an About section and a Project section. From the home page, we can navigate to each of those sections as well as to the Blogs page. The Blogs page displays all the blogs in a section, from which we can navigate to each of the individual blogs. All indidual Blogs follow the same layout.
 
 ### Decision-Making Process for overall Aesthetic (R6)
 
@@ -75,7 +71,7 @@ I have decided to go with a simple website structure based on the sitemap above.
 
 The wireframes I have created were designed on Uizard. I found the online tool to be much more beginner-friendly compared to something like Figma. I didn't find it too difficult to create different wireframes for screens of different sizes. I was able to create different sections of the site with ease, Which made it easier to adjust any changes. This helped with testing different colour schemes, creating different screen sizes for responsiveness and being able to see the complete version of the site on all screens. When it came to the layout of my Home page, I was inspired by a variety of portfolios online. Most of these portfolios follow a one-dimensional layout which is what I wanted. The home page is separated by two other sections. The About and Project section. I decided to place those sections on the same page as I felt like they were related. For the rest of the website, I separated the Blogs into a different page which then can lead to the individual blogs. Finally, I was inspired by the website Medium - an online publishing platform. This website follows a similar layout to what I had planned, which I felt would work well with my Blog page.
 
-When it came to the overall look of my portfolio, I decided to look at various portfolio layouts and colour schemes. I discovered that the choice of colours is important for creating a cohesive theme that ties all the components together. This contributes to the overall layout and helps users to easily distinguish between different sections of the page. After testing different colour schemes, I decided to go with a blue colour palette as the theme for my website. The colours work well with each section, creating a simple yet effective theme, in my opinion.
+When it came to the overall look of my portfolio, I decided to look at various portfolio layouts and colour schemes. I discovered that the choice of colours is important for creating a cohesive theme that ties all the components together. This contributes to the overall layout and helps users to easily distinguish between different sections of the page. After testing different colour schemes, I decided to go with a blue colour palette as the theme for my website. For headings and Footers i used a dark navy blue colour, while for the body i used a lighter blue colour. The colours work really well with each section, creating a simple yet effective theme, in my opinion.
 
 ## Target Audience and Website Components (R7)
 
