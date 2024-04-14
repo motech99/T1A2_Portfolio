@@ -15,9 +15,23 @@ GitHub Repository Link: [Click Here!](https://github.com/motech99/T1A2_Portfolio
 
 Welcome to my portfolio! This project was part of my assessments during Term 1 at Coder Academy. The purpose of this project was to demonstrate my understanding of HTML and CSS by creating a fully responsive portfolio. I achieved this by testing the usage of Flexbox/CSS Grid. The project also tested my understanding of how HTML works, including being able to connect multiple HTML documents, as well as the decision process of creating a website such as wireframes and mockups of the pages. Through this project, I gained valuable hands on experience in debugging errors and improved my thought process when it came to problem solving. It also helped me improve my attention to detail.
 
+It is important for me to demonstrate my understanding to my educators as well as to showcase my abilities to potential employers.
+
 ### Functionality / features
 
-placeholder
+**Multiple HTML Documents:** This portfolio includes multiple HTML documents to stay consistent and also separate different sections of the pages, each connecting to different sections of the website to facilitate easy navigation for users.
+
+**Fully Responsive Design:** This portfolio was designed to be accessible and visually appealing on different screen sizes using Mobile First Responsive Design.
+
+**Links To Socials:** This feature makes it easy to navigate to my GitHub or LinkedIn profiles. Links are available both in the main section and footer.
+
+**Links To Projects Repo:** This feature displays clickable cards with image previews of GitHub repositories for each project.
+
+**Downloadable CV:** This feature allows potential employers or users to easily download and view my CV.
+
+**Flexbox and CSS Grid:** This portfolio heavily depends on using both Flexbox and CSS Grid. Flexbox is utilised for mobile and tablet screen sizes to center different sections of the pages. It is also used to flex wrap the projects/blog cards in order to maintain responsiveness. For larger screen sizes, the main section and the about me section use Flexbox Grid to create a two-dimensional layout.
+
+**Wireframes and Mockups** Before developing the website, a sitemap was created to outline the overall structure. Mockups were then made for mobile, tablet, and desktop screens using Uizard.
 
 ### Screenshots
 
@@ -25,7 +39,7 @@ placeholder
 
 ## Sitemap
 
-### Website Structure and Navigation Overview (R5)
+### Website Structure and Navigation Overview
 
 ![1](./docs/wireframes/Portfolio%20Sitemap.png)
 
@@ -73,7 +87,7 @@ The wireframes I have created were designed on Uizard. I found the online tool t
 
 When it came to the overall look of my portfolio, I decided to look at various portfolio layouts and colour schemes. I discovered that the choice of colours is important for creating a cohesive theme that ties all the components together. This contributes to the overall layout and helps users to easily distinguish between different sections of the page. After testing different colour schemes, I decided to go with a blue colour palette as the theme for my website. For headings and Footers i used a dark navy blue colour, while for the body i used a lighter blue colour. The colours work really well with each section, creating a simple yet effective theme, in my opinion.
 
-## Target Audience and Website Components (R7)
+## Target Audience and Website Components
 
 ### Components list
 
@@ -107,4 +121,6 @@ When it came to the overall look of my portfolio, I decided to look at various p
 
 ## Tech Stack
 
-placeholder
+- HTML
+- CSS
+- SCSS
