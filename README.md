@@ -15,7 +15,7 @@ GitHub Repository Link: [Click Here!](https://github.com/motech99/T1A2_Portfolio
 
 Welcome to my portfolio! This project was part of my assessments during Term 1 at Coder Academy. The purpose of this project was to demonstrate my understanding of HTML and CSS by creating a fully responsive portfolio. I achieved this by testing the usage of Flexbox/CSS Grid. The project also tested my understanding of how HTML works, including being able to connect multiple HTML documents, as well as the decision process of creating a website such as wireframes and mockups of the pages. Through this project, I gained valuable hands on experience in debugging errors and improved my thought process when it came to problem solving. It also helped me improve my attention to detail.
 
-It is important for me to demonstrate my understanding to my educators as well as to showcase my abilities to potential employers.
+It is important to demonstrate my understanding to my educators as well as to showcase my abilities to potential employers.
 
 ### Functionality / features
 
@@ -35,6 +35,13 @@ It is important for me to demonstrate my understanding to my educators as well a
 
 ### Screenshots
 
+![1](./docs/screenshots/1.png)
+![2](./docs/screenshots/2.png)
+![3](./docs/screenshots/3.png)
+![4](./docs/screenshots/4.png)
+![5](./docs/screenshots/5.png)
+![6](./docs/screenshots/6.png)
+
 placeholder
 
 ## Sitemap
@@ -43,9 +50,25 @@ placeholder
 
 ![1](./docs/wireframes/Portfolio%20Sitemap.png)
 
-I have decided to go with a simple website structure based on the sitemap above. The Home page consists of two different sections: an About section and a Project section. From the home page, we can navigate to each of those sections as well as to the Blogs page. The Blogs page displays all the blogs in a section, from which we can navigate to each of the individual blogs. All indidual Blogs follow the same layout.
+#### Website Structure
 
-### Decision-Making Process for overall Aesthetic (R6)
+I have finalised a simple website structure based on the sitemap provided earlier. The Home page will serve as the central hub of the website and will have two sections, the About section and the Project section. The blog page will be separate from the Home page and will lead to individual blogs, each following the same layout.
+
+#### Navigation Flow
+
+**Home Page:** When users visit my website, they will be directed to the Home Page. The Home Page has a navigation bar that displays different options such as Home, About Me, Projects, and Blogs. Users can click on the Home option to return to the Home Page. The About Me option takes them to the About Me section, the Projects option navigates them to the Projects section, and the Blogs option leads them to the Blogs page. The navigation bar is designed to help the users move around the website quickly and easily.
+
+ **Main section:** Upon entering the website, users can see a greeting message followed by my name. They can also download my CV by clicking the button provided or visit my GitHub and LinkedIn accounts through the icons displayed.
+
+ **About Me Section:** This section provides an overview of myself. It includes my passion for coding, why I started, what I'm currently doing, what I've done before, and my hobbies.
+
+ **Project Section:** This section displays all of my Projects as cards, each with a preview image, title and description.
+
+**Blogs Page:** The Blogs page uses the same cards as the Project one however it displays a preview image, article title and a published date. from there, users then can navigate to each blog by clicking on the respective cards. This page also has the same navigation bar which can lead back to the Home page or About/Project section.
+
+ **Blog 1-5 Page:** Each blog page features a navigation bar that offers the option to return to the Home page or the Blogs page. The page includes an article title, the name of the author, the date of publication, and a photo. These elements are then followed by an article section and the main content of the article.
+
+### Decision-Making Process for overall Aesthetic
 
 #### Mobile screen Home Page Wireframe
 
@@ -83,9 +106,9 @@ I have decided to go with a simple website structure based on the sitemap above.
 
 ![3](./docs/wireframes/individual%20blog%20page/%20Desktop%20-%20Individual%20Blog.png)
 
-The wireframes I have created were designed on Uizard. I found the online tool to be much more beginner-friendly compared to something like Figma. I didn't find it too difficult to create different wireframes for screens of different sizes. I was able to create different sections of the site with ease, Which made it easier to adjust any changes. This helped with testing different colour schemes, creating different screen sizes for responsiveness and being able to see the complete version of the site on all screens. When it came to the layout of my Home page, I was inspired by a variety of portfolios online. Most of these portfolios follow a one-dimensional layout which is what I wanted. The home page is separated by two other sections. The About and Project section. I decided to place those sections on the same page as I felt like they were related. For the rest of the website, I separated the Blogs into a different page which then can lead to the individual blogs. Finally, I was inspired by the website Medium - an online publishing platform. This website follows a similar layout to what I had planned, which I felt would work well with my Blog page.
+I created wireframes using Uizard, an online design tool that I found to be more beginner-friendly than Figma. It was easy to create wireframes for different screen sizes and sections of the site, allowing me to make changes and test different colour schemes and responsiveness across all screens. For my Home page, I was inspired by one-dimensional layouts commonly used in portfolios, and I separated the page into two sections: About and Projects. I decided to place these sections on the same page as they felt they were related. For the rest of the site, I separated the Blogs into a different page, leading to individual blogs. For the blog page, my plan was inspired by Medium, an online publishing platform, which uses a similar layout to what I envisioned what I wanted my Blog page to look like.
 
-When it came to the overall look of my portfolio, I decided to look at various portfolio layouts and colour schemes. I discovered that the choice of colours is important for creating a cohesive theme that ties all the components together. This contributes to the overall layout and helps users to easily distinguish between different sections of the page. After testing different colour schemes, I decided to go with a blue colour palette as the theme for my website. For headings and Footers i used a dark navy blue colour, while for the body i used a lighter blue colour. The colours work really well with each section, creating a simple yet effective theme, in my opinion.
+When it came to the overall look of my portfolio, I decided to look at various portfolio layouts and colour schemes. I discovered that the choice of colours is important for creating a cohesive theme that ties all the components together. This contributes to the overall layout and helps users to easily distinguish between different sections of the page. After testing different colour schemes, I decided to go with a blue colour palette as the theme for my website. For headings and Footers, I used a dark navy blue colour, while for the body I used a lighter blue colour. The colours work well with each section, creating a simple yet effective theme, in my opinion.
 
 ## Target Audience and Website Components
 
@@ -93,21 +116,21 @@ When it came to the overall look of my portfolio, I decided to look at various p
 
 ### Main Page
 
-- **Navigation Bar :** Responsive designed navigation bar with each heading linked to the relevant section of the page, providing better accessibility on every page. This applies to every page of the website.
+- **Navigation Bar :** Responsively designed navigation bar with each heading linked to the relevant section of the page, providing better accessibility on every page. This applies to every page of the website.
 
-- **Main Section:** This is the main screen of the website. It features an image with a heading, a button to download my CV, and social media icons for GitHub and LinkedIn, which lead to those profiles. This setup allows potential employers to access my CV and also enables other developers to connect with me on LinkedIn or GitHub. I chose to place these elements on my main page to ensure they are the first features visitors see when they land on my website. This should make it easier to build connections and easier to network.
+- **Main Section:** This is the main section of the website. It features an image with a heading, a button to download my CV, and social media icons for GitHub and LinkedIn, which lead to those profiles. This setup allows potential employers to access my CV and also enables other developers to connect with me on LinkedIn or GitHub. I chose to place these elements on my main page to ensure they are the first features visitors see when they land on my website. This should make it easier to build connections and easier to network.
 
 - **About Section:** Features an image with a section of a paragraph about myself showing my interests, hobbies, and why I started coding. This section allows the readers to get to know me a little better and the reason why I started coding!
 
-- **Project Section:** This section of my website showcases all of my previous projects that I have worked on. It allows users to see the type of projects I've previously worked on. It features an image of the project, a brief description, and a link to the GitHub repository for that project.
+- **Project Section:** This section of my website showcases all of my previous projects that I have worked on. It allows users to see the type of projects I've previously worked on. It features an image of the project, a brief description, and a link to the GitHub repository for that project. Each card changes to a lighter colour when hovered over to help the users distingush between cards
 
-- **footer:** The footer component is dedicated to showcasing copyright details that indicate ownership, as well as social media icons that link to my profiles. Consistency in design is important, in order to maintaining the professional look of the website, its important to have a footer on every page to keep the layout consistent.
+- **footer:** The footer component of a website is a section that is dedicated to displaying copyright details that indicate ownership, along with social media icons that are linked to the owner's profiles. Consistency in design is crucial to maintaining a professional look on the website. Therefore, it is essential to have a footer on each page of the website to keep the layout consistent.
 
 ### Blogs Page
 
 - **Navigation Bar:** Same as Home page.
 
-- **Main Section:** This section of the website is linked to a separate page, Blogs Page. This is so the users can mainly focus on each of the Blogs by not having other content there. Each blog contains an image, title and the date published. each blog is separated from each others for better readability for the users.
+- **Main Section:** This section of the website is accessed by clicking on "Blogs" from the navigation bar. I decided to do this so the users can mainly focus on Blogs only and nothing related to me as they are different topics. Each blog contains an image, title and the date published. each blog is separated from the others for better readability for the users. This component uses the same component as the project's card with minor adjustments to the description.
 
 - **Footer:** Same as Home Page.
 
@@ -119,8 +142,17 @@ When it came to the overall look of my portfolio, I decided to look at various p
 
 - **Footer:** same as Home Page.
 
+### other
+
+Each componenet has been fully designed to be responsive on all screen sizes. for the navigation and the header bar, I added minor animations. These animations consists of changing the colour of the text and adding a lighter colour with delay when hovered over. I also changed the cursor to pointer when hovered as well as this makes it easier for the users to select which sections of the page to go to. I also applied this to the Blogs cards and the project cards with colour change and pointer to cursor. I also used some minor animations on the download button to light up when hovered over as well as cursor changing to pointer for the same reason. The social media icons i just changed the cursor to pointer again for the users to know that its clickable. I tried to keep the animations as minium as possible but just enough to help with the flow of the pages for each sections allowing the users to engage with different sections of the page.
+
+#### Typography
+
+When it comes to typography on a webpage, I prefer to use two different fonts. One for the main headings and another for long paragraphs of text. This approach makes the website look more professional and helps users differentiate between the two sections, enabling them to decide which text is more important. Additionally, it enhances the visual appeal of the website and improves readability as users will see the larger text first.
+
 ## Tech Stack
 
 - HTML
 - CSS
 - SCSS
+-Uizard
